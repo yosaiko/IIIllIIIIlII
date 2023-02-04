@@ -1,4 +1,3 @@
-
 --[[ Credits
     Matas#3535 @matas - Created UI
     bored#9316 @wally hub user - Helped make library
@@ -21,9 +20,9 @@ local library = {
     ended = {},
     colors = {},
     folders = {
-        main = "funtime",
-        assets = "funtime/assets",
-        configs = "funtime/configs"
+        main = "Linux",
+        assets = "Linux/assets",
+        configs = "Linux/configs"
     },
     shared = {
         initialized = false,
@@ -782,7 +781,7 @@ do
                 --
 local GameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
                 if (tick() - Tick) > 0.15 then
-                    watermark_title.Text = string.format("ZeeBot |%s,  Fps = %u,  | "..GameName, library.shared.ping, library.shared.fps)
+                    watermark_title.Text = string.format("funtime.xyz |%s,  Fps = %u,  | "..GameName, library.shared.ping, library.shared.fps)
                     window.watermark:UpdateSize()
                     --
                     Tick = tick()
